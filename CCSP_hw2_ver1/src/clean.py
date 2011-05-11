@@ -22,7 +22,7 @@ class MainPage(webapp.RequestHandler):
         self.response.out.write("Clean successful")
         
     
-application = webapp.WSGIApplication([('/clean', MainPage)], debug=True)
+application = webapp.WSGIApplication([('/ntuh/clean', MainPage)], debug=True)
 
 def main():
     run_wsgi_app(application)

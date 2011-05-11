@@ -4,17 +4,17 @@ runtime: python
 api_version: 1
 
 handlers:
-- url: /cancel_register
+- url: /ntuh/cancel_register
   script: cancel_register.py
-- url: /register
+- url: /ntuh/register
   script: register.py 
-- url: /update
+- url: /ntuh/update
   script: update.py
-- url: /dept
+- url: /ntuh/dept
   script: dept.py
-- url: /doctor
+- url: /ntuh/doctor
   script: doctor.py
-- url: /clean
+- url: /ntuh/clean
   script: clean.py
 - url: /.*
   script: helloworld.py

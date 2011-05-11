@@ -67,7 +67,7 @@ class MainPage(webapp.RequestHandler):
         self.response.out.write(json.dumps(doctorList,ensure_ascii=False))
         
     
-application = webapp.WSGIApplication([('/update', MainPage)], debug=True)
+application = webapp.WSGIApplication([('/ntuh/update', MainPage)], debug=True)
 
 def main():
     run_wsgi_app(application)

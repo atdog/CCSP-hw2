@@ -167,7 +167,7 @@ class MainPage(webapp.RequestHandler):
             self.response.out.write(json.dumps(data, ensure_ascii=False))
         
     
-application = webapp.WSGIApplication([('/register', MainPage)], debug=True)
+application = webapp.WSGIApplication([('/ntuh/register', MainPage)], debug=True)
 
 def main():
     run_wsgi_app(application)

@@ -188,7 +188,7 @@ class MainPage(webapp.RequestHandler):
             self.response.out.write(json.dumps({'status':'0'},ensure_ascii=False))
         
     
-application = webapp.WSGIApplication([('/cancel_register', MainPage)], debug=True)
+application = webapp.WSGIApplication([('/ntuh/cancel_register', MainPage)], debug=True)
 
 def main():
     run_wsgi_app(application)
